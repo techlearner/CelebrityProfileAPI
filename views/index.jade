@@ -1,5 +1,70 @@
 extends layout
-
+ 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.top
+    label Add person
+    form.form-horizontal(method="post", id="personForm", action="person")
+      label Person Id
+      input.span3(id="person_id", type="text", name="person_id", placeholder="Enter Person ID")
+      label Person Name
+      input.span3(id="person_name", type="text", name="person_name", placeholder="Enter Person Name")
+      label Person Category
+      input.span3(id="person_category", type="text", name="person_category", placeholder="Enter Person Category")
+      input.btn(type="submit", value="Add Person")
+      
+   div.bottom
+    label Add Video
+    form.form-horizontal(method="post", id="videoForm", action="video")
+      label Video ID
+      input.span3(id="video_id", type="text", name="video_id", placeholder="Enter Video ID")
+      label Video Title
+      input.span3(id="video_title", type="text", name="video_title", placeholder="Enter Video Title")
+      label Video URL
+      input.span3(id="video_url", type="text", name="video_url", placeholder="Enter Video URL")
+      label Video Thumb URL
+      input.span3(id="video_thumb_url", type="text", name="video_thumb_url", placeholder="Enter Video Thumb URL")
+      label Celebrity ID
+      input.span3(id="celebrity_id", type="text", name="celebrity_id", placeholder="Enter Celebrity ID")
+      input.btn(type="submit", value="Add VIDEO Details")
+      
+   div.top
+    label Add Image
+    form.form-horizontal(method="post", id="videoForm", action="video")
+      label Video ID
+      input.span3(id="video_id", type="text", name="video_id", placeholder="Enter Video ID")
+      label Video Title
+      input.span3(id="video_title", type="text", name="video_title", placeholder="Enter Video Title")
+      label Video URL
+      input.span3(id="video_url", type="text", name="video_url", placeholder="Enter Video URL")
+      label Video Thumb URL
+      input.span3(id="video_thumb_url", type="text", name="video_thumb_url", placeholder="Enter Video Thumb URL")
+      label Celebrity ID
+      input.span3(id="celebrity_id", type="text", name="celebrity_id", placeholder="Enter Celebrity ID")
+      input.btn(type="submit", value="Add VIDEO Details")
+     
+   div.bottom
+    label Add Trailer
+    form.form-horizontal(method="post", id="trailerForm", action="trailer")
+      label Video ID
+      input.span3(id="video_id", type="text", name="video_id", placeholder="Enter Video ID")
+      label Video Title
+      input.span3(id="video_title", type="text", name="video_title", placeholder="Enter Video Title")
+      label Video URL
+      input.span3(id="video_url", type="text", name="video_url", placeholder="Enter Video URL")
+      label Video Thumb URL
+      input.span3(id="video_thumb_url", type="text", name="video_thumb_url", placeholder="Enter Video Thumb URL")
+      label Video Category
+      input.span3(id="video_category", type="text", name="video_category", placeholder="Enter Video Category ID")
+      input.btn(type="submit", value="Add Trailer Details")
+      
+   div.top
+    label Add Category
+    form.form-horizontal(method="post", id="trailerForm", action="category")
+      label Category ID
+      input.span3(id="category_id", type="text", name="category_id", placeholder="Enter Category ID")
+      label Category Name
+      input.span3(id="category_name", type="text", name="category_name", placeholder="Enter Category Name")
+      input.btn(type="submit", value="Add Trailer Details") 
+   
+  div.container
+  div.footer

@@ -16,6 +16,8 @@ var pool = mysql.createPool(
 			//debug: true
 });
 
+exports.pool = pool;
+
 exports.celebrity = function(req, res) {
 	var celebrityName = req.param("name");
 	var limit = req.param("limit");
@@ -82,7 +84,7 @@ exports.celebrity = function(req, res) {
 					console.log("Failed to get videos");
 					res.send(error);
 				} else {
-					console.log("results "+result);
+					//console.log("results "+result);
 					trailers = result;
 					connection.release();
 				}
@@ -100,7 +102,7 @@ exports.celebrity = function(req, res) {
 			
 			connection.query(imageSql, function(error, result) {
 				if(error) {
-					console.log("Failed to get videos");
+					//console.log("Failed to get videos");
 					res.send(error);
 				} else {
 					console.log("results "+result);
